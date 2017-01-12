@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Practice Selenium Tests" verbose="2">
+    <parameter name="browse" value="FF"></parameter>
+    <parameter name="driverpath" value ="src/test/resources/geckodriver"></parameter>
+	<parameter name="baseURL" value ="http://www.practiceselenium.com"></parameter>
+   <test name = "LinkTests" preserve-order="true">
+  		<classes>
+  	 	
+  	 	    <class name="cucumber.runner.TestRunner"></class>
+  	    </classes>
+   </test>
+</suite>
