@@ -20,7 +20,8 @@ public class Links extends BasePage {
 
     public String clickLink(String link) throws InterruptedException {
         click(findLinkItem(link));
-        waitForTitle(link);
+        waitFortitleToBePresent(link);
+        //waitForTitle(link);
         return driver.getTitle();
     }
 
@@ -33,15 +34,4 @@ public class Links extends BasePage {
         return driver.getTitle();
     }
 
-    //    public boolean waitForVisibilityOfElement(WebElement element) {
-    //        boolean isExists = true;
-    //        try {
-    //            wait.until(ExpectedConditions.visibilityOf(element));
-    //        } catch (NoSuchElementException e) {
-    //            isExists = false;
-    //        } catch (Exception e) {
-    //            isExists = false;
-    //        }
-    //        return isExists;
-    //    }
 }
